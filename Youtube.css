@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto',sans-serif;
+}
+
+body{
+    background:#fff;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    background:white;
+    border-bottom:1px solid #ddd;
+    z-index:100;
+}
+
+.left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.menu{
+    font-size:22px;
+    cursor:pointer;
+}
+
+.search-box{
+    display:flex;
+    width:500px;
+}
+
+.search-box input{
+    flex:1;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:20px 0 0 20px;
+}
+
+.search-box button{
+    padding:10px 20px;
+    border:1px solid #ccc;
+    border-left:none;
+    border-radius:0 20px 20px 0;
+    cursor:pointer;
+}
+
+.right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.right img{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+}
+
+aside{
+    position:fixed;
+    top:60px;
+    left:0;
+    width:220px;
+    height:100vh;
+    border-right:1px solid #eee;
+    background:white;
+}
+
+aside ul{
+    list-style:none;
+    padding:20px;
+}
+
+aside li{
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+aside li:hover{
+    background:#f2f2f2;
+}
+
+main{
+    margin-left:220px;
+    margin-top:70px;
+    padding:20px;
+}
+
+.categories{
+    display:flex;
+    gap:10px;
+    overflow:auto;
+    margin-bottom:20px;
+}
+.categories{
+    display:flex;
+    gap:10px;
+    overflow:auto;
+    margin-bottom:20px;
+}
+
+.categories button:hover{
+    background:#ddd;
+}
+
+.videos{
+    
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    gap:20px;
+}
+
+.card img{
+    display:flex;
+    width:100%;
+    border-radius:12px;
+}
+
+.info{
+    padding:10px 0;
+}
+
+.info h4{
+    margin-bottom:5px;
+}
+
+.info p{
+    color:#606060;
+    margin-bottom:3px;
+}
+
+.info small{
+    color:#606060;
+}
